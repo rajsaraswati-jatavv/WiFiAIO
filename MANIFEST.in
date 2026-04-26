@@ -1,0 +1,72 @@
+# ============================================================
+# WiFiAIO - MANIFEST.in
+# Specifies additional files to include in source distribution
+# ============================================================
+
+# License
+include LICENSE
+
+# Documentation
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+
+# Build configuration
+include pyproject.toml
+include setup.py
+include setup.cfg
+
+# Dependency files
+include requirements.txt
+include requirements-dev.txt
+include requirements-full.txt
+
+# Docker files
+include Dockerfile
+include docker-compose.yml
+
+# Environment example
+include .env.example
+
+# Makefile
+include Makefile
+
+# Configuration files
+recursive-include src/wifiaio/config *.yaml *.json *.toml *.ini
+
+# TUI CSS assets
+recursive-include src/wifiaio/tui/css *.tcss *.css
+
+# Default wordlists (small/frequent only)
+recursive-include wordlists *.txt *.lst
+
+# Data files
+recursive-include src/wifiaio/data *.json *.db *.csv
+
+# Type stubs
+recursive-include src/wifiaio *.pyi
+
+# Python type marker
+recursive-include src/wifiaio py.typed
+
+# Exclude unnecessary files from distribution
+prune tests
+prune docs
+prune captures
+prune logs
+prune output
+prune .github
+prune .vscode
+prune .idea
+
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *.so
+global-exclude *.egg-info
+global-exclude .DS_Store
+global-exclude .env
+global-exclude *.db
+global-exclude *.sqlite
+global-exclude *.pcap
+global-exclude *.pcapng
+global-exclude *.cap

@@ -1,0 +1,30 @@
+# WiFiAIO Core Dependencies
+# ========================
+
+# Packet manipulation & network scanning
+scapy>=2.5.0
+
+# HTTP requests & API interactions
+requests>=2.31.0
+
+# Rich terminal output & logging
+rich>=13.7.0
+
+# Terminal UI framework
+textual>=0.47.0
+
+# Web API server
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# WebSocket client
+websocket-client>=1.7.0
+
+# System & process monitoring
+psutil>=5.9.7
+
+# Network interface information
+netifaces>=0.11.0
+
+# Environment variable management
+python-dotenv>=1.0.0

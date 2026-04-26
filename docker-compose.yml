@@ -1,0 +1,76 @@
+# ============================================================
+# WiFiAIO Docker Compose Configuration
+# ============================================================
+# Usage:
+#   docker compose up -d          # Start services
+#   docker compose logs -f        # View logs
+#   docker compose down           # Stop services
+# ============================================================
+
+version: "3.9"
+
+services:
+  wifiaio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wifiaio:latest
+    container_name: wifiaio
+    restart: unless-stopped
+
+    # Host network mode required for raw socket / WiFi operations
+    network_mode: host
+
+    # Privileged mode required for monitor mode & packet injection
+    privileged: true
+
+    # Capabilities (supplementary, even with privileged)
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+      - SYS_PTRACE
+
+    # Environment variables
+    env_file:
+      - .env
+
+    # Volume mounts
+    volumes:
+      # Persist captured data
+      - ./captures:/opt/wifiaio/captures
+      # Persist wordlists
+      - ./wordlists:/opt/wifiaio/wordlists
+      # Persist logs
+      - ./logs:/opt/wifiaio/logs
+      # Persist database
+      - ./data:/opt/wifiaio/data
+      # Persist output / reports
+      - ./output:/opt/wifiaio/output
+      # Pass WiFi device (USB passthrough on supported hosts)
+      - /dev/bus/usb:/dev/bus/usb
+
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 4G
+        reservations:
+          cpus: "1.0"
+          memory: 512M
+
+    # Logging configuration
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import requests; requests.get('http://localhost:8080/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

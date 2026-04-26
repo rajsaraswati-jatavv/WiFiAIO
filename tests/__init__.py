@@ -1,0 +1,1 @@
+"""WiFiAIO test suite."""

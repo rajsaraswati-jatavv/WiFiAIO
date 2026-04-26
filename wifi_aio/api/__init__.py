@@ -1,0 +1,72 @@
+"""WiFiAIO REST API sub-package.
+
+Provides a FastAPI-based REST API and WebSocket interface for
+remote control of WiFiAIO operations including scanning, capture,
+cracking, deauthentication, evil twin, OSINT, and more.
+"""
+
+from wifi_aio.api.server import create_app
+from wifi_aio.api.models import (
+    ScanRequest, ScanResponse,
+    CaptureRequest, CaptureResponse,
+    CrackRequest, CrackResponse,
+    DeauthRequest, DeauthResponse,
+    EvilTwinRequest, EvilTwinResponse,
+    WPSRequest, WPSResponse,
+    SniffRequest, SniffResponse,
+    SignalRequest, SignalResponse,
+    VulnRequest, VulnResponse,
+    OSINTRequest, OSINTResponse,
+    ForensicsRequest, ForensicsResponse,
+    BluetoothRequest, BluetoothResponse,
+    GeoRequest, GeoResponse,
+    SpeedRequest, SpeedResponse,
+    PasswordRequest, PasswordResponse,
+    ComplianceRequest, ComplianceResponse,
+    TopologyRequest, TopologyResponse,
+    ConnectRequest, ConnectResponse,
+    JammerRequest, JammerResponse,
+    InjectRequest, InjectResponse,
+    SystemStatusResponse,
+    ConfigRequest, ConfigResponse,
+    SessionResponse,
+    PluginResponse,
+    ReportRequest, ReportResponse,
+    ExportRequest, ExportResponse,
+    WorkflowRequest, WorkflowResponse,
+    APIKeyAuth,
+)
+from wifi_aio.api.websocket import WebSocketManager
+
+__all__ = [
+    "create_app",
+    "WebSocketManager",
+    "ScanRequest", "ScanResponse",
+    "CaptureRequest", "CaptureResponse",
+    "CrackRequest", "CrackResponse",
+    "DeauthRequest", "DeauthResponse",
+    "EvilTwinRequest", "EvilTwinResponse",
+    "WPSRequest", "WPSResponse",
+    "SniffRequest", "SniffResponse",
+    "SignalRequest", "SignalResponse",
+    "VulnRequest", "VulnResponse",
+    "OSINTRequest", "OSINTResponse",
+    "ForensicsRequest", "ForensicsResponse",
+    "BluetoothRequest", "BluetoothResponse",
+    "GeoRequest", "GeoResponse",
+    "SpeedRequest", "SpeedResponse",
+    "PasswordRequest", "PasswordResponse",
+    "ComplianceRequest", "ComplianceResponse",
+    "TopologyRequest", "TopologyResponse",
+    "ConnectRequest", "ConnectResponse",
+    "JammerRequest", "JammerResponse",
+    "InjectRequest", "InjectResponse",
+    "SystemStatusResponse",
+    "ConfigRequest", "ConfigResponse",
+    "SessionResponse",
+    "PluginResponse",
+    "ReportRequest", "ReportResponse",
+    "ExportRequest", "ExportResponse",
+    "WorkflowRequest", "WorkflowResponse",
+    "APIKeyAuth",
+]

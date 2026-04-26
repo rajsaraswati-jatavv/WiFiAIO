@@ -1,0 +1,140 @@
+{
+    "version": "2.0.0",
+    "application": {
+        "name": "WiFiAIO",
+        "debug": false,
+        "log_level": "INFO",
+        "log_file": "~/.local/share/wifi_aio/wifiaio.log",
+        "data_dir": "~/.local/share/wifi_aio",
+        "config_dir": "~/.config/wifi_aio",
+        "cache_dir": "~/.cache/wifi_aio",
+        "language": "en",
+        "theme": "dark",
+        "max_concurrent_tasks": 4,
+        "auto_check_updates": true,
+        "telemetry_enabled": false
+    },
+    "database": {
+        "path": "~/.local/share/wifi_aio/wifiaio.db",
+        "backup_on_exit": true,
+        "backup_dir": "~/.local/share/wifi_aio/backups",
+        "max_backups": 10,
+        "wal_mode": true
+    },
+    "scanning": {
+        "default_interface": "wlan0",
+        "scan_type": "active",
+        "scan_duration_seconds": 30,
+        "band": "both",
+        "channel_hop_interval": 0.5,
+        "passive_dwell_time": 100,
+        "save_results": true,
+        "auto_sort": "signal"
+    },
+    "capture": {
+        "default_interface": "wlan0mon",
+        "capture_dir": "~/.local/share/wifi_aio/captures",
+        "default_timeout_seconds": 300,
+        "auto_deauth_for_handshake": true,
+        "deauth_count": 5,
+        "deauth_interval_seconds": 3,
+        "pcap_buffer_size_kb": 4096,
+        "verify_handshake": true
+    },
+    "cracking": {
+        "default_tool": "auto",
+        "prefer_gpu": true,
+        "gpu_device_id": 0,
+        "default_method": "dictionary",
+        "default_wordlist": "/usr/share/wordlists/rockyou.txt",
+        "session_save_interval_seconds": 60,
+        "max_concurrent_sessions": 2,
+        "hashcat_path": "",
+        "john_path": "",
+        "aircrack_path": ""
+    },
+    "deauth": {
+        "default_interface": "wlan0mon",
+        "default_count": 10,
+        "default_reason_code": 7,
+        "burst_mode": false,
+        "burst_count": 100,
+        "check_pmf": true,
+        "auto_channel_switch": true
+    },
+    "evil_twin": {
+        "default_interface": "wlan1",
+        "default_channel": 6,
+        "captive_portal_enabled": true,
+        "captive_portal_template": "default",
+        "dhcp_range_start": "10.0.0.100",
+        "dhcp_range_end": "10.0.0.200",
+        "dhcp_lease_time": "12h",
+        "dns_redirect": true,
+        "ssl_redirect": false,
+        "log_credentials": true,
+        "hostapd_config": "/etc/wifiaio/hostapd.conf",
+        "dnsmasq_config": "/etc/wifiaio/dnsmasq.conf"
+    },
+    "wps": {
+        "default_method": "pixie_dust",
+        "max_pin_attempts": 10000,
+        "timeout_seconds": 300,
+        "delay_between_attempts_ms": 500,
+        "use_bully": false,
+        "auto_detect_lockout": true,
+        "lockout_wait_seconds": 60
+    },
+    "osint": {
+        "wigle_api_key": "",
+        "google_api_key": "",
+        "cache_results": true,
+        "cache_duration_hours": 24,
+        "max_query_rate_per_minute": 10,
+        "include_cve_lookup": true,
+        "include_isp_lookup": true,
+        "include_router_fingerprint": true
+    },
+    "api_server": {
+        "enabled": false,
+        "host": "0.0.0.0",
+        "port": 8080,
+        "api_key": "",
+        "cors_origins": ["*"],
+        "websocket_enabled": true,
+        "max_connections": 50,
+        "rate_limit_per_minute": 120
+    },
+    "reporting": {
+        "default_format": "html",
+        "output_dir": "~/.local/share/wifi_aio/reports",
+        "include_evidence": true,
+        "include_recommendations": true,
+        "company_name": "",
+        "assessor_name": "",
+        "template_dir": ""
+    },
+    "bluetooth": {
+        "enabled": true,
+        "scan_duration_seconds": 15,
+        "scan_type": "both",
+        "include_ble": true
+    },
+    "forensics": {
+        "auto_parse_pcap": true,
+        "extract_handshakes": true,
+        "extract_credentials": true,
+        "max_file_size_mb": 500
+    },
+    "compliance": {
+        "standards": ["pci_dss", "nist", "cis"],
+        "strict_mode": false,
+        "include_recommendations": true
+    },
+    "plugins": {
+        "enabled": true,
+        "plugin_dir": "~/.config/wifi_aio/plugins",
+        "auto_load": true,
+        "disabled_plugins": []
+    }
+}
