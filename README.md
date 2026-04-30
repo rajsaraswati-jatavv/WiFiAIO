@@ -9,26 +9,29 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/rajsaraswati/WiFiAIO/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/rajsaraswati/WiFiAIO/ci.yml?branch=main&style=flat-square" alt="CI Status"/>
+  <a href="https://github.com/rajsaraswati-jatavv/WiFiAIO/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/rajsaraswati-jatavv/WiFiAIO/ci.yml?branch=main&style=flat-square" alt="CI Status"/>
   </a>
-  <a href="https://github.com/rajsaraswati/WiFiAIO/releases">
-    <img src="https://img.shields.io/github/v/release/rajsaraswati/WiFiAIO?style=flat-square" alt="Release"/>
+  <a href="https://github.com/rajsaraswati-jatavv/WiFiAIO/releases">
+    <img src="https://img.shields.io/github/v/release/rajsaraswati-jatavv/WiFiAIO?style=flat-square" alt="Release"/>
   </a>
-  <a href="https://github.com/rajsaraswati/WiFiAIO/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/rajsaraswati/WiFiAIO?style=flat-square" alt="License"/>
+  <a href="https://github.com/rajsaraswati-jatavv/WiFiAIO/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/rajsaraswati-jatavv/WiFiAIO?style=flat-square" alt="License"/>
   </a>
   <a href="https://www.python.org/downloads/">
     <img src="https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square" alt="Python Version"/>
   </a>
-  <a href="https://github.com/rajsaraswati/WiFiAIO/issues">
-    <img src="https://img.shields.io/github/issues/rajsaraswati/WiFiAIO?style=flat-square" alt="Issues"/>
+  <a href="https://github.com/rajsaraswati-jatavv/WiFiAIO/issues">
+    <img src="https://img.shields.io/github/issues/rajsaraswati-jatavv/WiFiAIO?style=flat-square" alt="Issues"/>
   </a>
-  <a href="https://github.com/rajsaraswati/WiFiAIO/stargazers">
-    <img src="https://img.shields.io/github/stars/rajsaraswati/WiFiAIO?style=flat-square" alt="Stars"/>
+  <a href="https://github.com/rajsaraswati-jatavv/WiFiAIO/stargazers">
+    <img src="https://img.shields.io/github/stars/rajsaraswati-jatavv/WiFiAIO?style=flat-square" alt="Stars"/>
   </a>
   <img src="https://img.shields.io/badge/platform-Linux-orange?style=flat-square" alt="Platform"/>
   <img src="https://img.shields.io/badge/code%20style-black-000000?style=flat-square" alt="Code Style"/>
+  <a href="https://youtube.com/@T3rmuxk1ng">
+    <img src="https://img.shields.io/badge/YouTube-T3rmuxk1ng-red?style=flat-square&logo=youtube" alt="YouTube"/>
+  </a>
 </p>
 
 ---
@@ -118,7 +121,7 @@ WiFiAIO/
 
 ```bash
 # Clone the repository
-git clone https://github.com/rajsaraswati/WiFiAIO.git
+git clone https://github.com/rajsaraswati-jatavv/WiFiAIO.git
 cd WiFiAIO
 
 # Set up environment
@@ -129,7 +132,7 @@ make install
 ### Option 2: Development Install
 
 ```bash
-git clone https://github.com/rajsaraswati/WiFiAIO.git
+git clone https://github.com/rajsaraswati-jatavv/WiFiAIO.git
 cd WiFiAIO
 
 cp .env.example .env
@@ -139,7 +142,7 @@ make dev-install
 ### Option 3: Docker
 
 ```bash
-git clone https://github.com/rajsaraswati/WiFiAIO.git
+git clone https://github.com/rajsaraswati-jatavv/WiFiAIO.git
 cd WiFiAIO
 
 # Build and run
@@ -379,5 +382,11 @@ Unauthorized access to computer networks is a criminal offense in most jurisdict
 ---
 
 <p align="center">
-  Built with purpose by <strong>RAJSARASWATI JATAV</strong>
+  Built with purpose by <strong>Rajsaraswati Jatav (T3rmuxk1ng)</strong></p>
+<p align="center">
+  <a href="https://youtube.com/@T3rmuxk1ng">YouTube: @T3rmuxk1ng</a> |
+  <a href="https://github.com/rajsaraswati-jatavv">GitHub</a>
+</p>
+<p align="center">
+  <strong>If you found this project useful, give it a star!</strong>
 </p>
