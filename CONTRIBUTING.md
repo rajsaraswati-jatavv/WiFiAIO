@@ -363,7 +363,7 @@ We take security seriously and will respond promptly.
 ## Questions?
 
 Feel free to:
-- Open a [GitHub Discussion](https://github.com/rajsaraswati/WiFiAIO/discussions)
+- Open a [GitHub Discussion](https://github.com/t3rmuxk1ng/WiFiAIO/discussions)
 - Ask in the issue tracker with the `question` label
 
 Thank you for contributing to WiFiAIO!

@@ -10,7 +10,7 @@ from typing import Dict, List
 # ── Package metadata ─────────────────────────────────────────────────
 
 VERSION = "3.0.0"
-AUTHOR = "RAJSARASWATI JATAV"
+AUTHOR = "T3RMUXK1NG"
 
 
 # ── Enumerations ─────────────────────────────────────────────────────
@@ -165,4 +165,4 @@ DEFAULT_DNSMASQ_CONF = {
 }
 
 # GitHub update URL
-GITHUB_API_URL = "https://api.github.com/repos/rajsaraswati/WiFiAIO/releases/latest"
+GITHUB_API_URL = "https://api.github.com/repos/t3rmuxk1ng/WiFiAIO/releases/latest"

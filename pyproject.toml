@@ -17,10 +17,10 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
 authors = [
-    {name = "RAJSARASWATI JATAV", email = "rajsaraswati@example.com"},
+    {name = "T3RMUXK1NG", email = "t3rmuxk1ng@example.com"},
 ]
 maintainers = [
-    {name = "RAJSARASWATI JATAV", email = "rajsaraswati@example.com"},
+    {name = "T3RMUXK1NG", email = "t3rmuxk1ng@example.com"},
 ]
 keywords = [
     "wifi",
@@ -78,11 +78,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rajsaraswati/WiFiAIO"
-Documentation = "https://github.com/rajsaraswati/WiFiAIO/wiki"
-Repository = "https://github.com/rajsaraswati/WiFiAIO"
-Issues = "https://github.com/rajsaraswati/WiFiAIO/issues"
-Changelog = "https://github.com/rajsaraswati/WiFiAIO/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/t3rmuxk1ng/WiFiAIO"
+Documentation = "https://github.com/t3rmuxk1ng/WiFiAIO/wiki"
+Repository = "https://github.com/t3rmuxk1ng/WiFiAIO"
+Issues = "https://github.com/t3rmuxk1ng/WiFiAIO/issues"
+Changelog = "https://github.com/t3rmuxk1ng/WiFiAIO/blob/main/CHANGELOG.md"
 
 [project.scripts]
 wifiaio = "wifi_aio.cli:main"

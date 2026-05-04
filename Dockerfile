@@ -8,7 +8,7 @@
 
 FROM kalilinux/kali-rolling:latest AS base
 
-LABEL maintainer="RAJSARASWATI JATAV"
+LABEL maintainer="T3RMUXK1NG"
 LABEL description="WiFiAIO - All-in-One WiFi Auditing & Security Toolkit"
 LABEL version="1.0.0"
 
